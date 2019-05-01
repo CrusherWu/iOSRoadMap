@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF7B905C22784E1100025DAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B905B22784E1100025DAB /* AppDelegate.m */; };
+		CF7B905F22784E1100025DAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B905E22784E1100025DAB /* ViewController.m */; };
+		CF7B906222784E1100025DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B906022784E1100025DAB /* Main.storyboard */; };
+		CF7B906422784E1100025DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B906322784E1100025DAB /* Assets.xcassets */; };
+		CF7B906722784E1100025DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B906522784E1100025DAB /* LaunchScreen.storyboard */; };
+		CF7B906A22784E1100025DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B906922784E1100025DAB /* main.m */; };
+		CF7B907422784E1100025DAB /* dlopenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B907322784E1100025DAB /* dlopenTests.m */; };
+		CF7B907F22784E1100025DAB /* dlopenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B907E22784E1100025DAB /* dlopenUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF7B907022784E1100025DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF7B904F22784E1100025DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7B905622784E1100025DAB;
+			remoteInfo = dlopen;
+		};
+		CF7B907B22784E1100025DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF7B904F22784E1100025DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7B905622784E1100025DAB;
+			remoteInfo = dlopen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF7B905722784E1100025DAB /* dlopen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlopen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7B905A22784E1100025DAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF7B905B22784E1100025DAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF7B905D22784E1100025DAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF7B905E22784E1100025DAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF7B906122784E1100025DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF7B906322784E1100025DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF7B906622784E1100025DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF7B906822784E1100025DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7B906922784E1100025DAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF7B906F22784E1100025DAB /* dlopenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dlopenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7B907322784E1100025DAB /* dlopenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dlopenTests.m; sourceTree = "<group>"; };
+		CF7B907522784E1100025DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7B907A22784E1100025DAB /* dlopenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dlopenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7B907E22784E1100025DAB /* dlopenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dlopenUITests.m; sourceTree = "<group>"; };
+		CF7B908022784E1100025DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF7B905422784E1100025DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B906C22784E1100025DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B907722784E1100025DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF7B904E22784E1100025DAB = {
+			isa = PBXGroup;
+			children = (
+				CF7B905922784E1100025DAB /* dlopen */,
+				CF7B907222784E1100025DAB /* dlopenTests */,
+				CF7B907D22784E1100025DAB /* dlopenUITests */,
+				CF7B905822784E1100025DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7B905822784E1100025DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B905722784E1100025DAB /* dlopen.app */,
+				CF7B906F22784E1100025DAB /* dlopenTests.xctest */,
+				CF7B907A22784E1100025DAB /* dlopenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7B905922784E1100025DAB /* dlopen */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B905A22784E1100025DAB /* AppDelegate.h */,
+				CF7B905B22784E1100025DAB /* AppDelegate.m */,
+				CF7B905D22784E1100025DAB /* ViewController.h */,
+				CF7B905E22784E1100025DAB /* ViewController.m */,
+				CF7B906022784E1100025DAB /* Main.storyboard */,
+				CF7B906322784E1100025DAB /* Assets.xcassets */,
+				CF7B906522784E1100025DAB /* LaunchScreen.storyboard */,
+				CF7B906822784E1100025DAB /* Info.plist */,
+				CF7B906922784E1100025DAB /* main.m */,
+			);
+			path = dlopen;
+			sourceTree = "<group>";
+		};
+		CF7B907222784E1100025DAB /* dlopenTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B907322784E1100025DAB /* dlopenTests.m */,
+				CF7B907522784E1100025DAB /* Info.plist */,
+			);
+			path = dlopenTests;
+			sourceTree = "<group>";
+		};
+		CF7B907D22784E1100025DAB /* dlopenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B907E22784E1100025DAB /* dlopenUITests.m */,
+				CF7B908022784E1100025DAB /* Info.plist */,
+			);
+			path = dlopenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF7B905622784E1100025DAB /* dlopen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7B908322784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopen" */;
+			buildPhases = (
+				CF7B905322784E1100025DAB /* Sources */,
+				CF7B905422784E1100025DAB /* Frameworks */,
+				CF7B905522784E1100025DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dlopen;
+			productName = dlopen;
+			productReference = CF7B905722784E1100025DAB /* dlopen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF7B906E22784E1100025DAB /* dlopenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7B908622784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopenTests" */;
+			buildPhases = (
+				CF7B906B22784E1100025DAB /* Sources */,
+				CF7B906C22784E1100025DAB /* Frameworks */,
+				CF7B906D22784E1100025DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7B907122784E1100025DAB /* PBXTargetDependency */,
+			);
+			name = dlopenTests;
+			productName = dlopenTests;
+			productReference = CF7B906F22784E1100025DAB /* dlopenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF7B907922784E1100025DAB /* dlopenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7B908922784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopenUITests" */;
+			buildPhases = (
+				CF7B907622784E1100025DAB /* Sources */,
+				CF7B907722784E1100025DAB /* Frameworks */,
+				CF7B907822784E1100025DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7B907C22784E1100025DAB /* PBXTargetDependency */,
+			);
+			name = dlopenUITests;
+			productName = dlopenUITests;
+			productReference = CF7B907A22784E1100025DAB /* dlopenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7B904F22784E1100025DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "星火教育";
+				TargetAttributes = {
+					CF7B905622784E1100025DAB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CF7B906E22784E1100025DAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CF7B905622784E1100025DAB;
+					};
+					CF7B907922784E1100025DAB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CF7B905622784E1100025DAB;
+					};
+				};
+			};
+			buildConfigurationList = CF7B905222784E1100025DAB /* Build configuration list for PBXProject "dlopen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF7B904E22784E1100025DAB;
+			productRefGroup = CF7B905822784E1100025DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7B905622784E1100025DAB /* dlopen */,
+				CF7B906E22784E1100025DAB /* dlopenTests */,
+				CF7B907922784E1100025DAB /* dlopenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF7B905522784E1100025DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B906722784E1100025DAB /* LaunchScreen.storyboard in Resources */,
+				CF7B906422784E1100025DAB /* Assets.xcassets in Resources */,
+				CF7B906222784E1100025DAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B906D22784E1100025DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B907822784E1100025DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7B905322784E1100025DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B905F22784E1100025DAB /* ViewController.m in Sources */,
+				CF7B906A22784E1100025DAB /* main.m in Sources */,
+				CF7B905C22784E1100025DAB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B906B22784E1100025DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B907422784E1100025DAB /* dlopenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7B907622784E1100025DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B907F22784E1100025DAB /* dlopenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF7B907122784E1100025DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7B905622784E1100025DAB /* dlopen */;
+			targetProxy = CF7B907022784E1100025DAB /* PBXContainerItemProxy */;
+		};
+		CF7B907C22784E1100025DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7B905622784E1100025DAB /* dlopen */;
+			targetProxy = CF7B907B22784E1100025DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF7B906022784E1100025DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7B906122784E1100025DAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF7B906522784E1100025DAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7B906622784E1100025DAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7B908122784E1100025DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF7B908222784E1100025DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF7B908422784E1100025DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF7B908522784E1100025DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF7B908722784E1100025DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dlopen.app/dlopen";
+			};
+			name = Debug;
+		};
+		CF7B908822784E1100025DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dlopen.app/dlopen";
+			};
+			name = Release;
+		};
+		CF7B908A22784E1100025DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dlopen;
+			};
+			name = Debug;
+		};
+		CF7B908B22784E1100025DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dlopenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-545.dlopenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dlopen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF7B905222784E1100025DAB /* Build configuration list for PBXProject "dlopen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7B908122784E1100025DAB /* Debug */,
+				CF7B908222784E1100025DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7B908322784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7B908422784E1100025DAB /* Debug */,
+				CF7B908522784E1100025DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7B908622784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7B908722784E1100025DAB /* Debug */,
+				CF7B908822784E1100025DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7B908922784E1100025DAB /* Build configuration list for PBXNativeTarget "dlopenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7B908A22784E1100025DAB /* Debug */,
+				CF7B908B22784E1100025DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF7B904F22784E1100025DAB /* Project object */;
+}
