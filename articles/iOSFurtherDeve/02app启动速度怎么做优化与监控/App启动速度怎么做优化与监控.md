@@ -150,6 +150,8 @@ https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSA
 - 加载命令（Load Command）：描述了文件中数据的具体组织结构，不同的数据类型使用不同的加载命令表示；
 - 数据区（Data）：Data 中每一个段（Segment）的数据都保存在此，段的概念和 ELF 文件中段的概念类似，都拥有一个或多个 Section ，用来存放数据和代码。
 
+![Mach-O](./Mach-O.png)
+
 ###### 11.2 Mach-O Data
 
 拥有不同类型 segment，同一 segment 分不同类型 section。
