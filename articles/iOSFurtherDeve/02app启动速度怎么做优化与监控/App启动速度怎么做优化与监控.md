@@ -100,7 +100,7 @@ The downside of using a static library is that it’s code is locked into the fi
 
 [深入剖析iOS动态链接库](https://www.jianshu.com/p/1de663f64c05)
 
-4.4 动态库的制作和使用流程
+###### 4.4 动态库的制作和使用流程
 
 （1）版本更新，API 的兼容
 
