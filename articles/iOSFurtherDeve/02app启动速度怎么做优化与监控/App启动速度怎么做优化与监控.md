@@ -38,7 +38,9 @@ If you submit your app to the app store, it's vital you keep your map file, so i
 
 [瘦身](https://www.cnblogs.com/fengmin/p/5631781.html)
 
-[Linkmap 分析工具](https://github.com/huanxsd/LinkMap) （下一步：看懂实现原理和动手实现一个）
+[Linkmap 分析工具](https://github.com/huanxsd/LinkMap) 
+
+>简述一下实现过程：通过遍历 Object files，将文件编号作为字典 key，接着遍历 Symbols，通过已经查找到对应的文件 key，相加统计每个文件的大小。
 
 ###### 3.5 crash 分析
 
