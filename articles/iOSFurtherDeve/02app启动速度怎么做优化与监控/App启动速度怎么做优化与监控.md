@@ -1,4 +1,4 @@
-##02 | App 启动速度怎么做优化与监控？
+#### 02 | App 启动速度怎么做优化与监控？
 
 ##### 1.冷启动/热启动
 
@@ -6,9 +6,9 @@
 
 一个 application 是一个进程，一个进程可以包含多个线程。
 
-##### 3.可执行文件？
+##### 3.可执行文件, Link Map File
 
-3.1 格式？
+###### 3.1 格式？
 
 .o 文件 (目标文件)
 
@@ -16,11 +16,13 @@
 
 [对Link Map File的初步认识](<http://sparkgis.com/2018/11/20/%E5%AF%B9link-map-file%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/>)
 
-3.2 可执行文件中做了些什么？
+[一个demo](./linkMapFile.txt )
+
+###### 3.2 可执行文件中做了些什么？
 
 全局变量，类名，办法名等等，那么需要清楚他的整体结构。
 
-3.3 作用
+###### 3.3 作用
 
 A link map file is a text file that details where data, code, etc lives inside your executable. Very handy for stack traces when your program crashes, and for examining memory.
 
@@ -32,13 +34,15 @@ If you submit your app to the app store, it's vital you keep your map file, so i
 
 （2）可以瘦身
 
-3.4 可执行文件瘦身：
+###### 3.4 可执行文件瘦身：
 
 [瘦身](https://www.cnblogs.com/fengmin/p/5631781.html)
 
-[Linkmap 分析工具](https://github.com/huanxsd/LinkMap) （下一步：看懂实现原理和动手实现一个）
+[Linkmap 分析工具](https://github.com/huanxsd/LinkMap) 
 
-3.5 crash 分析
+>简述一下实现过程：通过遍历 Object files，将文件编号作为字典 key，接着遍历 Symbols，通过已经查找到对应的文件 key，相加统计每个文件的大小。
+
+###### 3.5 crash 分析
 
 [简书crash分析](https://www.jianshu.com/p/16b680d45e09)
 
@@ -50,13 +54,13 @@ If you submit your app to the app store, it's vital you keep your map file, so i
 
 ##### 4.动态库
 
-4.1 什么是动态库？
+###### 4.1 什么是动态库？
 
 WWDC2014，Xcode6 beta 发布。
 
 *Frameworks for iOS. iOS developers can now create dynamic frameworks. Frameworks are a collection of code and resources to encapsulate functionality that is valuable across multiple projects. Frameworks work perfectly with extensions, sharing logic that can be used by both the main application, and the bundled extensions.*
 
-4.2 动态库和静态库的区别
+###### 4.2 动态库和静态库的区别
 
 静态库的后缀名是以`.a`结尾，动态库的后缀名可以是`.dylib`或`.framework`结尾，所有的系统库都属于动态库，在iOS中一般使用framework作为动态库。
 
@@ -87,7 +91,7 @@ The downside of using a static library is that it’s code is locked into the fi
 
 [Static Libraries vs. Dynamic Libraries](<https://medium.com/@StueyGK/static-libraries-vs-dynamic-libraries-af78f0b5f1e4>)
 
-4.3 动态库是如何运用的？
+###### 4.3 动态库是如何运用的？
 
 动态库允许一个应用在实际需要的时候加载一段代码到它的地址空间中去，这既可以在应用启动时或者运行时完成。动态库并不是应用的二进制文件的一部分。
  当一个app启动后，app的代码最先被加载到进程的地址空间，然后动态链接器`dynamic loader` - 在苹果的平台上即是`dyld`，接管进程并加载相关的库。这里面包括解析他们在文件系统上的位置（基于他们安装时候的名字），并解析app需要的未定义的外部符号`external symbols`。在运行时`dynamic loader`也将会加载哪些被请求的其他库。
@@ -98,7 +102,7 @@ The downside of using a static library is that it’s code is locked into the fi
 
 [深入剖析iOS动态链接库](https://www.jianshu.com/p/1de663f64c05)
 
-4.4 动态库的制作和使用流程
+###### 4.4 动态库的制作和使用流程
 
 （1）版本更新，API 的兼容
 
@@ -106,7 +110,7 @@ One issue that developers must keep in mind when developing dynamic libraries is
 
 [官方](<https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html>)
 
-4.5 作用
+###### 4.5 作用
 
 是否可以通过动态库动态更新UI or function?
 
@@ -132,15 +136,15 @@ https://blog.nelhage.com/2010/10/amd64-and-va_arg/
 http://infocenter.arm.com/help/topic/com.arm.doc.ihi0055b/IHI0055B_aapcs64.pdf
 https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSABIReference/Articles/ARM64FunctionCallingConventions.html
 
-10.汇编知识入门
+##### 10.汇编知识入门
 
 汇编语言入门可以看阮一峰老师的《汇编语言入门教程》啊。链接是 http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html 。以后可以考虑写个 iOS 视角的
 
-11.Mach-O
+##### 11.Mach-O
 
 我们用 Xcode 构建一个程序的过程中，会把源文件 (`.m` 和 `.h`) 文件转换为一个可执行文件。这个可执行文件中包含的字节码会将被 CPU (iOS 设备中的 ARM 处理器或 Mac 上的 Intel 处理器) 执行。
 
-11.1 结构
+###### 11.1 结构
 
 ![mach-o](https://www.desgard.com/iOS-Source-Probe/image/15058343519881/mach-o.png)可以看的出 Mach-O 主要由 3 部分组成:
 
@@ -148,7 +152,11 @@ https://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iPhoneOSA
 - 加载命令（Load Command）：描述了文件中数据的具体组织结构，不同的数据类型使用不同的加载命令表示；
 - 数据区（Data）：Data 中每一个段（Segment）的数据都保存在此，段的概念和 ELF 文件中段的概念类似，都拥有一个或多个 Section ，用来存放数据和代码。
 
-11.2 Mach-O Data
+![Mach-O](./Mach-O.png)
+
+###### 11.2 Mach-O Data
+
+拥有不同类型 segment，同一 segment 分不同类型 section。
 
 先来说 Segment 的组成，以下代码仍旧来自 `loader.h`：
 
