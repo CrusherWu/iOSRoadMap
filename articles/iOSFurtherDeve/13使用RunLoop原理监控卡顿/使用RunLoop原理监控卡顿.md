@@ -6,7 +6,7 @@
 
 ##### 2.如何监督卡顿
 
-RunLoop  监听卡顿需要关注两个状态，即是进入睡眠之前和被唤醒之后，分别是 kCFRunLoopBeforeSources 和 kCFRunLoopAfterWaiting。
+RunLoop  监听卡顿需要关注两个状态，即是进入睡眠之前和被唤醒之后，分别是 kCFRunLoopBeforeSources 和 kCFRunLoopAfterWaiting。**why?**
 
 
 
