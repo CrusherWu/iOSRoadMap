@@ -8,6 +8,8 @@
 
 ##### 2.进阶
 
+![roadMap](./roadMap.png)
+
 2.1 [ App 启动速度怎么做优化与监控？](./articles/iOSFurtherDeve/02app启动速度怎么做优化与监控/App启动速度怎么做优化与监控.md)
 
 2.5 [链接器：符号是怎么绑定到地址上的](./articles/iOSFurtherDeve/05链接器符号是怎么绑定到地址上的/符号是怎么绑定到地址上的.md)
@@ -21,4 +23,6 @@
 2.12[全面监听崩溃](./articles/iOSFurtherDeve/12全面监听崩溃/全面监听崩溃.md )
 
 2.13[使用RunLoop原理监控卡顿](./articles/iOSFurtherDeve/13使用RunLoop原理监控卡顿/使用RunLoop原理监控卡顿.md )
+
+2.14[OOM，获取内存分配信息](./articles/iOSFurtherDeve/14OOM获取内存分配信息/OOM获取内存分配信息.md )
 
