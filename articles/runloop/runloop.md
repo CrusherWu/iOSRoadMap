@@ -1,6 +1,6 @@
-# Runloop
+#### Runloop
 
-## 概念
+##### 1.概念
 
 是通过内部维护的事件循环来对事件 / 消息进行管理的一个对象。
 
@@ -15,11 +15,11 @@
 
 
 
-main 函数为什么不退出？
+###### main 函数为什么不退出？
 
 在main函数中调用的UIApplicationMain 这样一个函数，会启动主线程的 Runloop，而 runloop 又是对事件循环的一种维护机制，在没事情做的时候做事，没事做的时候可以从用户态切换到内核态的一个切换，避免资源的占用，使当前线程处于休眠状态。 整个过程就是接收消息, 处理,等待（状态切换）。
 
-## 数据结构
+##### 2.数据结构
 
 NSRunloop 是 CFRunloop 的封装，提供了面向对象的 API.
 
@@ -94,7 +94,7 @@ Observer
 
 数据结构之间的关系
 
-![data relationship](./data relationship.png)
+![data relationship](./datarelationship.png)
 
 
 
@@ -115,7 +115,7 @@ commonMode
 
  
 
-## 事件循环机制
+##### 3.事件循环机制
 
 void CFRunLoopRun()
 
@@ -147,9 +147,11 @@ void CFRunLoopRun()
 
 runloop核心
 
-![core of runloop](./core of runloop.png)
+![core of runloop](./coreofrunloop.png)
 
-## Runloop 与 NSTimer
+
+
+##### 4.Runloop 与 NSTimer
 
 问题：滑动 TableView 的时候我们的定时器还会生效吗？
 
@@ -164,7 +166,7 @@ void CFRunLoopAddTimer(runloop, timer , commonMode);
 
 
 
-## Runloop 与多线程
+##### 5.Runloop 与多线程
 
 线程是和Runloop一一对应的。
 
@@ -178,13 +180,11 @@ void CFRunLoopAddTimer(runloop, timer , commonMode);
 
 
 
-### PerformSelecter
+##### 6.PerformSelecter
 
 当调用 NSObject 的 performSelecter:afterDelay: 后，实际上其内部会创建一个 Timer 并添加到当前线程的 RunLoop 中。所以如果当前线程没有 RunLoop，则这个方法会失效。
 
 当调用 performSelector:onThread: 时，实际上其会创建一个 Timer 加到对应的线程去，同样的，如果对应线程没有 RunLoop 该方法也会失效。
-
-
 
 
 
