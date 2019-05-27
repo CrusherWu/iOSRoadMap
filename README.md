@@ -26,3 +26,5 @@
 
 2.14[OOM，获取内存分配信息](./articles/iOSFurtherDeve/14OOM获取内存分配信息/OOM获取内存分配信息.md )
 
+2.17[多线程的坑](./articles/iOSFurtherDeve/17多线程的坑/17多线程的坑.md )
+
