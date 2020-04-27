@@ -78,7 +78,9 @@ WWDC2014，Xcode6 beta 发布。
 
 在使用app时，静态库和动态库都会被加载到内存中。当多个app使用同一个库时，如果这个库是动态库，由于动态库是可以被多个app的进程共用的，所以在内存中只会存在一份；如果是静态库，由于每个app的mach-o文件中都会存在一份，则会存在多份。相对静态库，使用动态库可以减少app占用的内存大小。
 
-另外，使用动态库可以缩短app的启动时间。原因是，使用动态库时，app的mach-o文件都会比较小；app依赖的动态库可能已经存在于内存中了（其他已启动的app也依赖了这个动态库），所以不需要重复加载。
+~~另外，使用动态库可以缩短app的启动时间。原因是，使用动态库时，app的mach-o文件都会比较小；app依赖的动态库可能已经存在于内存中了（其他已启动的app也依赖了这个动态库），所以不需要重复加载。~~
+
+具体问题具体分析：如果你需要牺牲空间换速度，则可以使用静态变量。
 
 The downside of using a static library is that it’s code is locked into the final executable file and cannot be modified without a re-compile. In contrast, a dynamic library can be modified without a need to re-compile.
 
@@ -88,6 +90,7 @@ The downside of using a static library is that it’s code is locked into the fi
 |  多个应用之间关系  |      一对一      |      一对多       |
 |   运行时执行速度   |        快        |        慢         |
 |  是否需要重新编译  |        是        |        否         |
+|        内存        |        堆        |        栈         |
 
 [Static Libraries vs. Dynamic Libraries](<https://medium.com/@StueyGK/static-libraries-vs-dynamic-libraries-af78f0b5f1e4>)
 
@@ -113,6 +116,8 @@ One issue that developers must keep in mind when developing dynamic libraries is
 ###### 4.5 作用
 
 是否可以通过动态库动态更新UI or function?
+
+>可以，Injection 就是通过重新注入动态库来实现开发时实时更新UI。
 
 ##### 5.+laod() +initialize()
 
