@@ -82,6 +82,8 @@ WWDC2014，Xcode6 beta 发布。
 
 具体问题具体分析：如果你需要牺牲空间换速度，则可以使用静态变量。
 
+实际上对于动态库加载这一块的优化程度不是很大，只能靠系统 dyld 升级优化处理。[iOS Dynamic Framework 对App启动时间影响实测](https://www.jianshu.com/p/3263009e9228)
+
 The downside of using a static library is that it’s code is locked into the final executable file and cannot be modified without a re-compile. In contrast, a dynamic library can be modified without a need to re-compile.
 
 |                    | static libraries | dynamic libraries |

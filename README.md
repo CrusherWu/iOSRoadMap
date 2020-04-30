@@ -28,4 +28,14 @@
 
 2.17[多线程的坑](./articles/iOSFurtherDeve/17多线程的坑/17多线程的坑.md )
 
+##### 3.tips and tricks
+
+3.1[打印动态链接器事件命令](./articles/tipsAndTricks/001loggingDYLDevents.md)
+
+3.2[关于库信息](./articles/tipsAndTricks/002库信息/关于库的信息.md)
+
+3.3[Cocoapods](./articles/tipsAndTricks/003cocoapods/Cocoapod.md)
+
+
+
 
