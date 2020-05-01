@@ -63,7 +63,7 @@ typedef struct category_t {
 } category_t;
 ````
 
-#####2.2 加载调用栈：
+##### 2.2 加载调用栈：
 
 ```objective-c
 _objc_init
@@ -82,7 +82,7 @@ _objc_init
 
 该调用栈入口函数 `void _objc_init(void)` 在 `objc-os.mm` 中，有兴趣的同学可以去看看这些函数里都做了什么
 
-#####2.3 窥探源码：
+##### 2.3 窥探源码：
 
 使用 clang 命令看看 category 到底变成什么?
 
@@ -171,7 +171,7 @@ _objc_init
 
 ​	为其添加前缀，格式前缀_方法名。- (void) mrs_oneMethodForCategory; 
 
-#####2.5 总结：
+##### 2.5 总结：
 
 （1）分类添加的办法可以“覆盖”原类办法，实则各个类别的办法依然存在办法列表中。
 
