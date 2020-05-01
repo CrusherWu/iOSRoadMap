@@ -2,9 +2,21 @@
 
 ##### 1.iOS 基础
 
-1.1 [UI 视图](./articles/UI视图/UI.md)
+1.1 [UI 视图](./articles/iOS基础/UI视图/UI视图.md)
 
-1.4[runloop](./articles/runloop/runloop.md)
+1.2[OC基础知识](./articles/iOS基础/OC基础知识/OC基础知识.md)
+
+1.3[多线程](./articles/iOS基础/多线程/多线程.md)
+
+1.4[GDC](./articles/iOS基础/GCD/GDC.md)
+
+1.5[runloop](./articles/iOS基础/runloop/runloop.md)
+
+1.6[block](./articles/iOS基础/block/block.md)
+
+1.7[内存管理](./articles/iOS基础/内存管理/内存.md)
+
+1.8[框架](./articles/iOS基础/框架/框架.md)
 
 ##### 2.进阶
 
