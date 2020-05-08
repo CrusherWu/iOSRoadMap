@@ -52,6 +52,14 @@
 
 3.5[一点汇编知识](./articles/tipsAndTricks/005一点汇编知识.md)
 
+3.6[Runtime知识点](./articles/tipsAndTricks/006Runtime知识点/Runtime知识点.md)
+
+##### 4.杂文
+
+4.1[零碎博客](https://github.com/CrusherWu/study/wiki)
+
+
+
 
 
 
