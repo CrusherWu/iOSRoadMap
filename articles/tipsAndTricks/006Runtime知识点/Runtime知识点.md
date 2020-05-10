@@ -88,3 +88,47 @@ NSAssert(class_addMethod(metaclass, @selector(layerClass), (IMP)my_layerClass, "
 
 ![动态创建类](./动态创建类.png)
 
+##### 7.class 方法
+
+```objective-c
++ (Class)class {
+    return self; // 返回自身指针 (类 / 元类)
+}
+
+- (Class)class {
+    return object_getClass(self); // 调用'object_getClass'返回isa指针
+}
+
+Class object_getClass(id obj) {
+    return _object_getClass(obj);
+}
+
+//object_getClass实际调用的是_object_getClass函数，我们接着看其实现:
+
+static inline Class _object_getClass(id obj) {
+    #if SUPPORT_TAGGED_POINTERS
+    if （OBJ_IS_TAGGED_PTR(obj)）{
+        uint8_t slotNumber = ((uint8_t)(uint64_t) obj) & 0x0F;
+        Class isa = _objc_tagged_isa_table[slotNumber];
+        return isa;
+    }
+    #endif
+        if (obj) return obj->isa;
+        else return Nil;
+}
+```
+
+##### 8.相关博文
+
+[神经病院 Objective-C Runtime 入院第一天—— isa 和 Class](https://halfrost.com/objc_runtime_isa_class/)
+
+[神经病院 Objective-C Runtime 住院第二天——消息发送与转发](https://halfrost.com/objc_runtime_objc_msgsend/)
+
+[神经病院 Objective-C Runtime 出院第三天——如何正确使用 Runtime](https://halfrost.com/how_to_use_runtime/)
+
+[格物致知iOS系列之类与对象](https://www.imooc.com/article/70985)
+
+[结合 category 工作原理分析 OC2.0 中的 runtime](https://twitter.com/intent/tweet?text=结合 category 工作原理分析 OC2.0 中的 runtime "&hashtags=&url=https://bestswifter.com/runtime-category/)
+
+[深入理解Objective-C：Category](https://tech.meituan.com/2015/03/03/diveintocategory.html)
+
