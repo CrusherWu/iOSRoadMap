@@ -102,7 +102,7 @@ RunLoop 的 Mode
 
 ![mode](./mode.png)
 
-一个 Runloop 可以对应多个 mode，一个mode可以对一个多个 Source / Timer / Observer； 当runloop运行在某一个mode上面的时候，只专注于处理该mode上的事件，而屏蔽了其他mode的事件。例如runloop运行在mode1上面，这时候如果mode2的Observer/Timer 回调了，runloop并不能处理。
+一个 Runloop 可以对应多个 mode，一个mode可以对一个或是多个 Source / Timer / Observer； 当runloop运行在某一个mode上面的时候，只专注于处理该mode上的事件，而屏蔽了其他mode的事件。例如runloop运行在mode1上面，这时候如果mode2的Observer/Timer 回调了，runloop并不能处理。
 
 
 

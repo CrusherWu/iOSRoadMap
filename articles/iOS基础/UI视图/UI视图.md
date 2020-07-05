@@ -26,8 +26,6 @@ Many key objects are also responders, including the [`UIApplication`](https://de
 
 ![21](./21.png)
 
-![响应链流程](http://ojclrjct5.bkt.clouddn.com/1533562003.png)
-
 
 
 响应链的应用：
@@ -53,15 +51,11 @@ CPU 与 GPU 是通过总线链接起来，通过 CPU 输出一个 bitmap，经�
 
 ![22](./22.png)
 
-![](http://ojclrjct5.bkt.clouddn.com/1533767898.png )
-
 CPU与GPU分别做了什么？
 
 创建UIView后，显示部分由CALayer负责，CALayer有一个contents属性，就是我们最终要绘制到屏幕上的位图，如果我们创建的是UILabel，那么contents上最终要绘制就是“Hello”的位图,系统在合适的时候回调给我们一个drawRect的方法，然后我们可以在此基础上绘制一些我们想自定义绘制的内容，绘制好的这个位图，会经过Core Animation提交给GPU部分的OpenGL渲染管线，进行最终的位图的渲染以及纹理的合成，最终显示到屏幕上。
 
 ![23](./23.png)
-
-![](http://ojclrjct5.bkt.clouddn.com/1533853760.png )
 
 CPU：layout（UI布局，文本计算），display（绘制 drawRect）,prepare(图片解码)，commit（提交位图）
 
@@ -72,8 +66,6 @@ GPU：顶点着色，图元装配，光栅化，片段着色，片段处理，�
 #####3.1 UI卡顿，掉帧原因
 
 ![24](./24.png)
-
-![](http://ojclrjct5.bkt.clouddn.com/1533767975.png )
 
 60FPS 肉眼看起来UI 是流畅的，这就意味着 1.67ms 就需要完成一帧图，卡顿原因便是 CPU & GPU 协同超出每一帧的数据超出了这个时间界限。
 
@@ -89,15 +81,11 @@ GPU：纹理渲染，视图混合
 
 ![25](./25.png)
 
-![](http://ojclrjct5.bkt.clouddn.com/1533564228.png )
-
 当 runloop 要结束的时候，才会调用`[CALayer display]` 。
 
 系统绘制流程：
 
 ![26](./26.png)
-
-![](http://ojclrjct5.bkt.clouddn.com/1533564526.png )
 
 异步绘制：
 
@@ -108,8 +96,6 @@ GPU：纹理渲染，视图混合
 + 设置该 bitmap 作为 layer.contents  属性的值
 
   ![27](./27.png)
-
-![](http://ojclrjct5.bkt.clouddn.com/1534199383.png )
 
 扩展：
 

@@ -75,7 +75,7 @@ block 的 copy 操作
 | _NSConcreteGlobalBlock | 数据区 |  什么也不做  |
 | _NSConcreteMallocBlock |   堆   | 增加引用计数 |
 
-如何判断 block 的类别呢？
+s如何判断 block 的类别呢？
 
 （1）Block不访问外界变量（包括栈中和堆中的变量）
 
