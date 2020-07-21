@@ -19,12 +19,17 @@ UIButton *button = view.subviews.lastObject;
 
 ##### 3.数学函数
 round 如果参数是小数，则求本身的四舍五入.
+
 ceil  如果参数是小数，则求最小的整数但不小于本身.
+
 floor 如果参数是小数，则求最大的整数但不大于本身.
 
 Example:如何值是3.4的话，则
+
 -- round 3.000000
+
 -- ceil 4.000000
+
 -- floor 3.00000
 
 
